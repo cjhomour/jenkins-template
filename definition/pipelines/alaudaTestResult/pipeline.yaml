@@ -26,11 +26,11 @@ spec:
     - name: maventeset
       tasks:
         - name: maventeset
-          type: zpyu/alaudamaventest
+          type: public/alaudamaventest
     - name: TestResult
       tasks:
         - name: TestResult
-          type: zpyu/alaudaTestResult
+          type: public/alaudaTestResult
           options:
             timeout: 3600
   arguments:
