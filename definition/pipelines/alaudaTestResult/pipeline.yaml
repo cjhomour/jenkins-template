@@ -38,20 +38,6 @@ spec:
         zh-CN: "基本信息"
         en: "Basic Info"
       items:
-        - name: "maventest"
-          schema:
-            type: string
-          binding:
-            - alaudamaventest.args.maventest
-          display:
-            type: string
-            name:
-              zh-CN: "maven测试"
-              en: "maven test"
-            description:
-              zh-CN: maven测试
-              en: Path of ci command executing
-          required: true  
         - name: "analysisReport"
           schema:
             type: boolean
