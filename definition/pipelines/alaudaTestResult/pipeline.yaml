@@ -26,11 +26,11 @@ spec:
     - name: maventeset
       tasks:
         - name: maventeset
-          type: testorg001/alaudamaventest
+          type: public/alaudamaventest
     - name: TestResult
       tasks:
         - name: TestResult
-          type: testorg001/alaudaTestResult
+          type: public/alaudaTestResult
           options:
             timeout: 3600
   arguments:
