@@ -41,8 +41,6 @@ spec:
         - name: "analysisReport"
           schema:
             type: boolean
-          binding:
-            - TestResult.args.analysisReport
           display:
             type: boolean
             name:
