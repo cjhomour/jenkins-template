@@ -23,6 +23,10 @@ spec:
       tasks:
         - name: Clone
           type: public/clone
+    - name: maventeset
+      tasks:
+        - name: maventeset
+          type: zpyu/alaudamaventest
     - name: TestResult
       tasks:
         - name: TestResult
