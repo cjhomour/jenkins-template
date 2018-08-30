@@ -9,7 +9,7 @@ metadata:
     alauda.io/description.en: test result
     alauda.io/readme.zh-CN: 生成测试报告
     alauda.io/readme.en: test result
-    alauda.io/version: v0.1.6
+    alauda.io/version: v0.1.7
     alauda.io/style.icon: updateService
   labels:
     category: Test
@@ -26,11 +26,11 @@ spec:
     - name: maventeset
       tasks:
         - name: maventeset
-          type: alauda/alaudamaventest
+          type: zpyu/alaudamaventest
     - name: TestResult
       tasks:
         - name: TestResult
-          type: alauda/alaudaTestResult
+          type: zpyu/alaudaTestResult
           options:
             timeout: 3600
   arguments:
