@@ -9,7 +9,7 @@ metadata:
     alauda.io/description.en: test result
     alauda.io/readme.zh-CN: 生成测试报告
     alauda.io/readme.en: test result
-    alauda.io/version: v0.2.6
+    alauda.io/version: v0.2.3
     alauda.io/style.icon: updateService
   labels:
     category: Test
@@ -46,4 +46,8 @@ spec:
               zh-CN: "XML 位置"
               en: the location of xml
           required: true
-
+          relation:
+            - action: show
+              when:
+                name: analysisReport
+                value: true
