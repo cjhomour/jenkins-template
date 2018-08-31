@@ -9,7 +9,7 @@ metadata:
     alauda.io/description.en: maventest
     alauda.io/readme.zh-CN:
     alauda.io/readme.en:
-    alauda.io/version: v0.1.1
+    alauda.io/version: v0.1.2
     alauda.io/style.icon:
   labels:
     catgory: maventest
@@ -21,8 +21,8 @@ spec:
               sh 'mv ./example/* ./'
               sh 'mvn test'
             }
-        finally{ 
-            junit '{{.testResultXml}}'
+        finally{  
+            junit "{{.testResultXml}}"
         }
     }
   arguments:
@@ -35,8 +35,3 @@ spec:
           zh-CN: "报告存放目录"
           en: "The location of the test result"
       required: true
-      relation:
-        - action: show
-          when:
-            name: analysisReport
-            value: true
