@@ -9,7 +9,7 @@ metadata:
     alauda.io/description.en: test result
     alauda.io/readme.zh-CN: 生成测试报告
     alauda.io/readme.en: test result
-    alauda.io/version: v0.2.2
+    alauda.io/version: v0.2.3
     alauda.io/style.icon: updateService
   labels:
     category: Test
@@ -22,11 +22,11 @@ spec:
     - name: Clone      
       tasks:
         - name: Clone
-          type: testorg001/clone
+          type: public/clone
     - name: maventeset
       tasks:
         - name: maventeset
-          type: testorg001/alaudamaventest
+          type: talaudamaventest
   arguments:
     - displayName:
         zh-CN: "基本信息"
