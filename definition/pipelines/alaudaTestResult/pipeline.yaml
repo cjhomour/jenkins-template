@@ -27,50 +27,16 @@ spec:
       tasks:
         - name: maventeset
           type: testorg001/alaudamaventest
-    - name: TestResult
-      tasks:
-        - name: TestResult
-          type: testorg001/alaudaTestResult
-          options:
-            timeout: 3600
   arguments:
     - displayName:
         zh-CN: "基本信息"
         en: "Basic Info"
       items:
-        - name: "maventest"
-          schema:
-            type: string
-          binding:
-            - alaudamaventest.args.maventest
-          display:
-            type: string
-            name:
-              zh-CN: "maven测试"
-              en: "maven test"
-            description:
-              zh-CN: maven测试
-              en: Path of ci command executing
-          required: true  
-        - name: "analysisReport"
-          schema:
-            type: boolean
-          binding:
-            - TestResult.args.analysisReport
-          display:
-            type: boolean
-            name:
-              zh-CN: "是否解析报告"
-              en: "analysis the report"
-            description:
-              zh-CN: "是否解析报告"
-              en: "analysis the report"
-          required: true
         - name: "testResultXml"
           schema:
             type: string
           binding:
-            - TestResult.args.testResultXml
+            - alaudamaventest.args.testResultXml
           display:
             type: string
             name:
@@ -80,8 +46,4 @@ spec:
               zh-CN: "XML 位置"
               en: the location of xml
           required: true
-          relation:
-            - action: show
-              when:
-                name: analysisReport
-                value: true
+

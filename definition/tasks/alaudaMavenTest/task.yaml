@@ -16,19 +16,27 @@ metadata:
 spec:
   engine: gotpl
   body: |+
-        sh 'mv ./example/* ./'
-        sh 'mvn test'
+    script{
+        try{
+              sh 'mv ./example/* ./'
+              sh 'mvn test'
+            }
+        finally{ 
+            junit '{{.testResultXml}}'
+        }
+    }
   arguments:
-    - name: "maventest"
+    - name: "testResultXml"
       schema:
         type: string
       display:
         type: string
         name:
-          zh-CN: "maven测试有没有"
-          en: "Is There Maven？"
-        description:
-          zh-CN: "maven测试有没有"
-          en: "Is There Maven？."
-      required: false
-      default: latest
+          zh-CN: "报告存放目录"
+          en: "The location of the test result"
+      required: true
+      relation:
+        - action: show
+          when:
+            name: analysisReport
+            value: true
