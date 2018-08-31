@@ -45,5 +45,4 @@ spec:
             description:
               zh-CN: "XML 位置"
               en: the location of xml
-          required: true
 
