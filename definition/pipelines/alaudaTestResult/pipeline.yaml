@@ -36,7 +36,7 @@ spec:
           schema:
             type: string
           binding:
-            - alaudamaventest.args.testResultXml
+            - maventeset.args.testResultXml
           display:
             type: string
             name:
@@ -45,4 +45,5 @@ spec:
             description:
               zh-CN: "XML 位置"
               en: the location of xml
+      required: true
 
