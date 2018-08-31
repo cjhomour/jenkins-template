@@ -9,7 +9,7 @@ metadata:
     alauda.io/description.en: maventest
     alauda.io/readme.zh-CN:
     alauda.io/readme.en:
-    alauda.io/version: v0.1.8
+    alauda.io/version: v0.1.9
     alauda.io/style.icon:
   labels:
     catgory: maventest
@@ -22,7 +22,7 @@ spec:
               sh 'mvn test'
             }
         finally{  
-            junit "{{.testResultXml}}""
+            junit "{{.testResultXml}}"
         }
     }
   arguments:
