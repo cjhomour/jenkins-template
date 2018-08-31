@@ -22,7 +22,7 @@ spec:
               sh 'mvn test'
             }
         finally{  
-            junit "{{.testResultXml}}"
+            junit '{{.testResultXml}}'
         }
     }
   arguments:
